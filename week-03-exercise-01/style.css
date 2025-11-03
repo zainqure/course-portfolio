@@ -1,0 +1,38 @@
+/* Universal box-sizing rule */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: monospace;
+    background-color: hwb(215 67% 11%); /* Light blue background */
+    margin: 40px;
+    padding: 20px;
+}
+
+/* Card container */
+.card {
+    max-width: 600px;
+    margin: 0 auto 20px auto; /* top 0, left/right auto (centered), bottom 20px */
+    padding: 24px;
+    background-color: #071f40;
+    border: 2px solid white; /* Cyan border */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Name styling */
+.card h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+/* Bio text styling */
+.card p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    line-height: 2.5;
+}
