@@ -147,15 +147,48 @@ code {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7f3f0;
+  padding: 12px 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Makes sure the nav stays on top of other elements */
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  list-style: none; /* Removes bullet points from the list */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Shows list items in a row */
+  justify-content: center; /* Centers the menu horizontally */
+  gap: 24px; /* Space between each menu item */
+}
 
-.nav-custom li {}
+.nav-custom li {
+  margin: 0; /* Removes extra spacing around each list item */
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: block; /* Makes the link fill the area for easier clicking */
+  padding: 10px 16px;
+  color: #6b5b95;
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 500;
+  border-radius: 6px; /* Rounds the corners of the link background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  background-color: #6b5b95;
+  color: #ffffff;
+}
+
+.nav-custom + main {
+  margin-top: 60px; /* Pushes the main content down so nav doesn’t cover it */
+}
 
 @media (width >=480px) {}
 
